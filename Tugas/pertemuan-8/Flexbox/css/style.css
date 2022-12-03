@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column; 
+    margin: 0;
+}
+
+#main{
+    display: flex;
+    flex: 1;
+}
+
+#main > article{
+    flex: 1;
+    order: 2;
+    background-color: cadetblue;
+ 
+}
+
+#main > article > .container{
+        display: flex;
+        justify-content: space-around;
+}
+
+img{
+    background-color: violet;
+    margin-top: 230px;
+    width: 150px;
+    height: 150px;
+
+
+}
+
+#main >nav,
+#main > aside {
+    flex: 0 0 20vw;
+}
+
+#main > aside{
+    background: cyan;
+    order: 1;
+}
+
+header, footer{
+    background: khaki;
+    height: 20vh;
+}
+
+header, article, aside{
+    padding:1;
+    margin: 20px;
+}
+
+footer{
+    margin: 20px 20px 0px 20px;
+}

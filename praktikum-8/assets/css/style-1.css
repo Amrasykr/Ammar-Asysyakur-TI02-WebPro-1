@@ -1,0 +1,40 @@
+/* reset padding dan margin */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 5rem;
+}
+
+nav{
+    /* syarat untuk menggunakan flexbox */
+    display: flex;
+    justify-content: space-between;
+    background-color: cyan;
+    padding: 0.5rem;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav ul li{
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+nav ul li a{
+    color: darkblue;
+    text-decoration: none;
+}
+
+/* hover untuk memberikan aksi ketika kursor berada pada tag yang kita tuju*/
+nav ul li a:hover{
+    background-color: white;
+    color: darkgreen;
+}

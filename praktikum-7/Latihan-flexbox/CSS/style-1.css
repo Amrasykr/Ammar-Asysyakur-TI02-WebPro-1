@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: antiquewhite;
+    
+}
+.kotak {
+    border: 1px solid black;
+    width: 150px;
+    height: 700px;
+}
+.item-1 {
+    background-color: yellow;
+}
+.item-2 {
+    background-color: red;
+}
+.item-3 {
+    background-color: yellowgreen;
+}
+.item-4 {
+    background-color: skyblue;
+}
