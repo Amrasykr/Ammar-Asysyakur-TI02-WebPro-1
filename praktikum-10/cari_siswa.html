@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 10.1</title>
+    <style>
+        div{
+           width: 300px;
+           border: 25px solid darkslateblue;
+           padding: 25px;
+           margin: 25px;
+        }
+    </style>
+</head>
+<body>
+    <form id="frm_cari">
+        <label for="cari">Cari Siswa</label>
+        <input type="text" name="cari" size="30" id="cari">
+        <input type="button" value="go" name="proses_cari" id="go">
+    </form>
+    <hr>
+    <div>Nama yang Anda Cari: <span id="kata_cari"></span></div>
+    <script>
+        let buttonnGo =document.getElementById("go");
+
+        buttonnGo.addEventListener('click',  function () {
+            let nama = document.getElementById('cari').value;
+
+            if (nama == "Ammar"){
+                console.log("Ammar Ada dalam Database")
+                document.getElementById("kata_cari").innerHTML  = nama;
+                document.getElementById("kata_cari").style = "color : green";
+            } else{
+                console.log(`${nama} Tidak Ditemukan`)
+                document.getElementById("kata_cari").innerHTML  = `${nama} (Tidak Ditemukan)`;
+                document.getElementById("kata_cari").style = "color : red";
+            }
+        })
+    </script>
+
+</body>
+</html>
